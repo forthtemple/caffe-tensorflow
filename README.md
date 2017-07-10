@@ -1,10 +1,17 @@
 # Caffe to TensorFlow
+Updated to Tensorflow 1.2
 
 Convert [Caffe](https://github.com/BVLC/caffe/) models to [TensorFlow](https://github.com/tensorflow/tensorflow).
 
 ## Usage
 
 Run `convert.py` to convert an existing Caffe model to TensorFlow.
+For example
+
+    $python convert.py deploy.prototxt --caffemodel bvlc_reference_caffenet.caffemodel --data-output-path examples/imagenet/caffenet.npy
+
+You can get the model and deploy.prototxt from the model zoo at
+https://github.com/BVLC/caffe/tree/master/models/bvlc_reference_caffenet
 
 Make sure you're using the latest Caffe format (see the notes section for more info).
 
