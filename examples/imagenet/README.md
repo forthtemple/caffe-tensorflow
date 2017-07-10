@@ -11,9 +11,14 @@ The architecture used is defined in `models/googlenet.py` (which was auto-genera
 to download and convert the weights from Caffe to run the example. The download link for the
 corresponding weights can be found in Caffe's `models/bvlc_googlenet/` folder.
 
+If you are running the convert.py bvlc_caffenet example on the front page copy caffenet.npy to 'examples/imagenet' and run
+
+    $ python classify.py caffenet.npy kitten.jpg
+    
 You can run this example like so:
 
     $ ./classify.py /path/to/googlenet.npy ~/pics/kitty.png ~/pics/woof.jpg
+
 
 You should expect to see an output similar to this:
 
